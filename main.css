@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('./img/1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px; /* Ajusta el radio de borde para dar forma redondeada */
+    text-align: center;
+    max-width: 90%; /* Ajusta el ancho máximo del contenedor */
+    width: 400px; /* Fija un ancho específico para mantener el contenedor centrado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: auto; /* Centra el contenedor */
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #b38e3f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #d325ff;
+    transition: background-color 0.2s ease;
+}
+
+.task {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Media query para ajustes adicionales en pantallas pequeñas */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Ajusta el ancho máximo del contenedor para pantallas pequeñas */
+    }
+
+    input, select, button {
+        padding: 8px; /* Reduce el padding de los elementos de formulario */
+        font-size: 0.9em; /* Reduce el tamaño de fuente para elementos de formulario */
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas- Pre Entrega 3</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="favicon" href="./img/planeta-tierra.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de tareas</h1>
+        <h2>Agregar Tarea</h2>
+        <form id="task_form">
+            <label for="task_title">Tarea:</label>
+            <input type="text" id="task_title" required>
+            <label for="task_due">Plazo:</label>
+            <input type="date" id="task_due" required>
+            <label for="task_status">Estado:</label>
+            <select id="task_status">
+                <option value="Pendiente">Pendiente</option>
+                <option value="Completado">Completado</option>
+            </select>
+            <button type="submit">¡Acción!</button>
+        </form>
+        <h2>Listado de tareas:</h2>
+        <div id="task_container"></div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
